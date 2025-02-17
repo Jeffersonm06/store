@@ -1,0 +1,42 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+    --cor1: #0084ff;
+    --cor2: #e0e0e0;
+    --cor3: #90caf9;
+    --cor4: #64b5f6;
+    --cor5: #212529;
+    --nav-height: 60px;
+    --shadow1: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    --border-radius: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: var(--nav-height);
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--cor1);
+    box-shadow: var(--shadow1);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    box-shadow: var(--shadow1);
+    scale: 1.05;
+}
